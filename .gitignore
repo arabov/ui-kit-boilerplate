@@ -1,0 +1,21 @@
+.DS_Store
+lib
+node_modules
+public
+tmp
+#package-lock.json
+
+# Log files
+npm-debug.log*
+*.log
+pids
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw*
+*.sublime*

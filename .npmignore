@@ -1,0 +1,34 @@
+.DS_Store
+.idea
+__mocks__
+configs
+node_modules
+public
+src
+tmp
+.babelrc
+.eslintignore
+.eslintrc
+.gitignore
+.gitlab-ci.yml
+.npmignore
+.npmrc
+.npmrc_publish
+babel.config.js
+package-lock.json
+tsconfig.json
+
+# Log files
+npm-debug.log*
+*.log
+pids
+
+# Editor directories and files
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw*
+*.sublime*

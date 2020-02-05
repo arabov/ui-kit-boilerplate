@@ -1,0 +1,101 @@
+{
+  "name": "ui-kit",
+  "version": "1.0.0",
+  "description": "React UI kit",
+  "main": "lib/index.js",
+  "browserslist": {
+    "production": [
+      "defaults",
+      "> 0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "defaults"
+    ]
+  },
+  "scripts": {
+    "linter": "eslint --fix --ext .ts,.tsx \"./src\"",
+    "styleguidist:server": "styleguidist server --config ./configs/styleguide.config.js",
+    "styleguidist:build": "styleguidist build --config ./configs/styleguide.config.js",
+    "rollup:build": "rollup --config ./configs/rollup.config.js",
+    "webpack:build": "webpack --config ./configs/webpack.config.js",
+    "test": "jest --config ./configs/jest.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arabov/ui-kit-boilerplate"
+  },
+  "author": "",
+  "dependencies": {
+    "@types/lodash": "^4.14.149",
+    "@types/node": "^12.12.14",
+    "@types/react": "^16.9.19",
+    "@types/react-dom": "^16.9.5",
+    "classnames": "^2.2.6",
+    "lodash": "^4.17.15",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.4",
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "@babel/preset-react": "^7.7.4",
+    "@babel/preset-typescript": "^7.8.3",
+    "@rollup/plugin-commonjs": "^11.0.1",
+    "@rollup/plugin-node-resolve": "^7.0.0",
+    "@rollup/plugin-typescript": "^2.1.0",
+    "@rollup/plugin-url": "^4.0.1",
+    "@testing-library/react": "^9.4.0",
+    "@typescript-eslint/eslint-plugin": "^2.18.0",
+    "@typescript-eslint/parser": "^2.18.0",
+    "autoprefixer": "^9.7.4",
+    "babel-jest": "^25.1.0",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.2.1",
+    "cssnano": "^4.1.10",
+    "enzyme": "^3.11.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-react": "^7.18.0",
+    "file-loader": "^5.0.2",
+    "husky": "^4.2.1",
+    "jest": "^25.1.0",
+    "lint-staged": "^10.0.5",
+    "mini-css-extract-plugin": "^0.8.0",
+    "node-sass": "^4.13.0",
+    "postcss": "^7.0.26",
+    "postcss-url": "^8.0.0",
+    "prettier": "^1.19.1",
+    "react-docgen": "^4.1.1",
+    "react-docgen-typescript": "^1.16.1",
+    "react-styleguidist": "^10.2.1",
+    "react-test-renderer": "^16.12.0",
+    "rollup": "^1.30.0",
+    "rollup-plugin-peer-deps-external": "^2.2.0",
+    "rollup-plugin-sass": "^1.2.2",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.1",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.2",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  },
+  "peerDependencies": {
+    "react": "^16.x",
+    "react-dom": "^16.x",
+    "@types/react": "^16.x",
+    "@types/react-dom": "^16.x"
+  },
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "npm run linter"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
+}
